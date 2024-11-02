@@ -12,6 +12,7 @@ echo -e '10.129.191.235\t\tgreenhorn.htb'
 
 ## nmap scan for ports 
 
+´´´bash
 (base) nathan@ubuntu-desktop:~/Documents/git/ctf_journey$ sudo nmap -sS 10.10.11.25
 [sudo] password for nathan: 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-11-02 03:34 CET
@@ -22,6 +23,7 @@ PORT     STATE SERVICE
 22/tcp   open  ssh
 80/tcp   open  http
 3000/tcp open  ppp
+´´´
 
 We can see that we have a ppp server running on 3000.
 
