@@ -10,3 +10,8 @@
 ### Tools
 
 [Depix Python](https://github.com/spipm/Depix)
+
+
+## Writeups
+
+[HTB](writeups/greenhorn.md)
