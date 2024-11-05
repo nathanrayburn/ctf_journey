@@ -45,7 +45,9 @@ Simply by trying to use a cracker online I've found the password.
 ![alt text](image-3.png)
 
 ## Admin login
-logged in with the password.
+
+We can finally login into the pluck admin page.
+Logged in with the password.
 ![alt text](image-4.png)
 
 Now we can see the pluck version that they are using. 4.7.18.
@@ -166,13 +168,17 @@ pdfimages Using_OpenVAS.pdf out_pdf.ppm
 
 ![alt text](image-7.png)
 
-Using [Depix repo](https://github.com/spipm/Depix/tree/main) : 
+Using [Depix repo](https://github.com/spipm/Depix/tree/main) to depix linear pixelation : 
 
 ```bash
 python3 depix.py     -p out_pdf.ppm-000.ppm     -s images/searchimages/debruinseq_notepad_Windows10_spaced.png
 ```
 
-![alt text](output.png)
+Here is the output image
+
+![output](output.png)
+
+We can read this password : 
 
 `sidefromsidetheothersidesidefromsidetheotherside`
 
