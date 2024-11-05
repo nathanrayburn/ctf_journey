@@ -10,8 +10,12 @@
 ### Tools
 
 [Depix Python](https://github.com/spipm/Depix)
-
+[Useful Reverse Scripts](https://github.com/nathanrayburn/ctf_journey/tree/main/tools/reverse)
 
 ## Writeups
 
 [HTB](writeups/greenhorn.md)
+
+## POC
+
+[Stack Smashing](https://github.com/nathanrayburn/ctf_journey/blob/main/fun/reverse/README.md)
