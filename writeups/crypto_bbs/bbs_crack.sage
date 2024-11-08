@@ -1,3 +1,5 @@
+# Nathan Rayburn
+# BBS CTF Blackalps
 import math
 from base64 import b64decode
 from Crypto.Util.strxor import strxor
@@ -15,8 +17,8 @@ def bbs(seed, number_bytes, n):
 # Function to reverse the BBS and retrieve the original seed
 def reverse_bbs(final_seed,p,q):
     current_state = final_seed
-    Fp = Integers(p)
-    Fq = Integers(q)
+    #Fp = Integers(p)
+    #Fq = Integers(q)
     for i in range(31*8):
 
         #root_seed_p = Fp(current_state).sqrt().lift()
