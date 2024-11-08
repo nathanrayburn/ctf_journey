@@ -14,7 +14,8 @@
 
 ## Writeups
 
-[HTB](writeups/greenhorn.md)
+[HTB](writeups/greenhorn/greenhorn.md)
+[BBS - Crypto - Blackalps CTF Event](writeups/crypto_bbs/bbs_writeup.pdf)
 
 ## POC
 
