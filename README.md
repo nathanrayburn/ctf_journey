@@ -16,6 +16,7 @@
 
 - [Website CTF - HTB](writeups/greenhorn/greenhorn.md)
 - [BBS - Crypto - Blackalps CTF Event](writeups/crypto_bbs/bbs_writeup.pdf)
+- [Sponge - Crypto - Blackalps CTF Event](writeups/crypto_sponge/writeup_sponge.pdf)
 
 ## POC
 
