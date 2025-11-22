@@ -1,0 +1,44 @@
+(sage) nathanrayburn@Nathans-MacBook-Air-2 chal_mix_signing % nc mix-signing.ctf.blackalps.ch 2560
+Welcome in our mixed signature system.
+
+My public key is a37b97df0c5a0f70b978fd3f1732ce0241a57141be19219437eacc5a6d26dbedcd1570705e2b053b247f9f2e9e0aea64a1aa5ebd50bd2164ad47875dc3da186d
+
+What do you want to do:
+1: Get a Schnorr signature
+2: Get a ECDSA signature
+3: Get the flag
+4: Quit
+1
+Give me a message to sign:
+test
+7d84d017ed925d7858454b0ba10870ad02cb65855c7e8e3618a71f84d00f5c59dba379ac3cce807f94cb106c47a0e89240b84cf9ea50c8fa5dfb0880aca8a143
+
+
+What do you want to do:
+1: Get a Schnorr signature
+2: Get a ECDSA signature
+3: Get the flag
+4: Quit
+2
+Give me a message to sign:
+test
+7d84d017ed925d7858454b0ba10870ad02cb65855c7e8e3618a71f84d00f5c59112458fb74f6936aa87282dcb359ea6502a1033d660dd8ee8036799ee1d18303
+
+
+What do you want to do:
+1: Get a Schnorr signature
+2: Get a ECDSA signature
+3: Get the flag
+4: Quit
+3
+Give me a signature of the message "Flag please":
+97e8ba3a77e11cdfbff630adf8f62c8c324272fda8e565ccc6d6292223683639c0aa17e396329106a239cc638e65741fe565cf3eb73331d8d53bf0ffb653339d
+Well done here is the flag: BA25{T0lerance_gives_the_k3y}
+
+What do you want to do:
+1: Get a Schnorr signature
+2: Get a ECDSA signature
+3: Get the flag
+4: Quit
+^C
+(sage) nathanrayburn@Nathans-MacBook-Air-2 chal_mix_signing % nc yac.ctf.blackalps.ch 5472
